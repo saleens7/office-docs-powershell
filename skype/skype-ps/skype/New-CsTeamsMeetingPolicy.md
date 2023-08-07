@@ -36,7 +36,7 @@ New-CsTeamsMeetingPolicy [-Tenant <Guid>] [-Description <String>]
 [-AllowTrackingInReport <Boolean>] [-LiveCaptionsEnabledType <String>] [-RecordingStorageMode <String>] [-RoomAttributeUserOverride <String>]
 [-SpeakerAttributionMode <String>] [-WhoCanRegister <Object>] [-NewMeetingRecordingExpirationDays <Int32>]
 [-MeetingInviteLanguages <String>] [-AllowNetworkConfigurationSettingsLookup <Boolean>] [-LiveStreamingMode <String>] [-AllowedStreamingMediaInput <String>]
-[-AllowWatermarkForScreenSharing <Boolean>] [-AllowWatermarkForCameraVideo <Boolean>]
+[-AllowWatermarkForScreenSharing <Boolean>] [-AllowWatermarkForCameraVideo <Boolean>] [-AllowLocalRecording <Boolean>]
 [-InMemory] [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -201,6 +201,21 @@ Determines whether audio can be turned on in meetings and group calls. Set this 
 
 ```yaml
 Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowLocalRecording
+This parameter is reserved for internal Microsoft use.
+
+```yaml
+Type: Boolean
 Parameter Sets: (All)
 Aliases:
 
