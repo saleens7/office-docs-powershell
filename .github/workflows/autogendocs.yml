@@ -31,9 +31,10 @@ jobs:
         with:
           # Specify the Az PowerShell script here.
           inlineScript: |-
-            Install-Module MicrosoftTeams
+            Install-Module MicrosoftTeams -Force
             Install-Module -Name platyPS -Force
             Import-Module -Name platyPS
+            Import-Module -Name MicrosoftTeams
             Get-Module platyPS
             New-MarkdownHelp -Module MicrosoftTeams -OutputFolder .\docs
           azPSVersion: "latest"
