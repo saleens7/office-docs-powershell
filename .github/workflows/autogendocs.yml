@@ -31,3 +31,4 @@ jobs:
         with:
           # Specify the Az PowerShell script here.
           inlineScript: Write-Host 'Test'
+          azPSVersion: "latest"
