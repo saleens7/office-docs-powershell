@@ -31,7 +31,7 @@ jobs:
         with:
           # Specify the Az PowerShell script here.
           inlineScript: |-
-            Install-Module -Name platyPS -Scope CurrentUser
-            Import-Module platyPS
+            Install-Module -Name platyPS 
+            Import-Module -Name platyPS
             Get-Module platyPS
           azPSVersion: "latest"
