@@ -30,5 +30,8 @@ jobs:
       - uses: Azure/powershell@v2
         with:
           # Specify the Az PowerShell script here.
-          inlineScript: Write-Host 'Test'
+          inlineScript: |-
+            Install-Module -Name platyPS -Scope CurrentUser
+            Import-Module platyPS
+            Get-Module platyPS
           azPSVersion: "latest"
