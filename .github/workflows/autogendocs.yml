@@ -38,3 +38,7 @@ jobs:
             Get-Module platyPS
             New-MarkdownHelp -Module MicrosoftTeams -OutputFolder .\docs
           azPSVersion: "latest"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "Docs"
+          path: .\
