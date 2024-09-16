@@ -31,12 +31,7 @@ jobs:
         with:
           # Specify the Az PowerShell script here.
           inlineScript: |-
-            Install-Module -Name platyPS 
-          azPSVersion: "latest"
-      - uses: Azure/powershell@v2
-        with:
-          # Specify the Az PowerShell script here.
-          inlineScript: |-
+            Install-Module -Name platyPS -Force
             Import-Module -Name platyPS
             Get-Module platyPS
           azPSVersion: "latest"
